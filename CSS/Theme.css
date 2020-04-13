@@ -1,11 +1,12 @@
 html, body {
     scroll-behavior: smooth;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #F4F4F4;
     height: 100%;
     color: rgb(6, 11, 20);
     font-size: 1.01em;
     z-index: -2;
+    letter-spacing: 1.3px;
 }
 
 @media (max-width: 600px) {
@@ -13,11 +14,27 @@ html, body {
         font-size: 0.9em;
     }
 }
+.form-main input[type=text], textarea{
+    background-color: white;
+    color: #818181;
+    width: 250px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0.7em;
+    border: 1px solid black;
+    margin-top: 0.7em;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.form-main .insertinput[type=text]::placeholder, textarea{
+    color: #818181;
+    font-weight: lighter;
+}
 p{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .heading{
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 2em;
     letter-spacing: 3px;
 }
@@ -34,22 +51,22 @@ p{
     color: white;
 }
 .skin{
-    color: rgb(233, 212, 186)
+    color: rgb(228, 217, 173);
+}
+.red{
+    color: red;
 }
 .news {
     background-image: linear-gradient( rgba(1, 0, 0, 0.829), rgba(2, 0, 12, 0.726)), url("../Images/news.jpg");
     margin-top: 0px; height: 200px;
     background-attachment: fixed;
     background-position: center;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     vertical-align: center;
     display:table;
     width: 100%!important;
 }
-/*.partition-main{
-    height: 150px;
-    margin-top: 15px;
-}*/
 .news span,h3 {
     position: relative;
     color: whitesmoke;
@@ -62,21 +79,35 @@ p{
     height: 38em;
     background-image: linear-gradient( rgba(1, 0, 0, 0.829), rgba(2, 0, 12, 0.726)), url("../Images/news.jpg");
 }
+.partition-wooden{
+    height: 38em;
+    background-image:url("../Images/wooden.jpg");
+    height: 100%;
+}
 .partition-writing{
     height: 38em;
     background-image: url("../Images/ourMenu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.partition-plain{
+    height: 36em;
+    background-color: rgb(255, 253, 243);
+    background-image: none;
+    background-size: cover;
+}
+
 .allBtns{
     width: 250px;
     padding: 0.9em 1em;
     font-size: 1em;
     border: transparent;
+    transition: 0.3s;
 }
 .allBtns:hover{
     color: white;
     background-color: red;
+    transition: 0.3s;
 }
 .margin-left{
     margin-left: 1.2em;
@@ -140,8 +171,8 @@ p{
     float: right;
 }
 .backSkin{
-    background-color:rgb(233, 212, 186) ;
-    background: rgb(233, 212, 186);
+    background-color:rgb(228, 217, 173) ;
+    background: rgb(228, 217, 173);
 }
 
 /*-----------------EVENTS------------------*/
@@ -260,7 +291,9 @@ p{
         color: #96858F;
     }
 }
-
+.container-self{
+    padding: 0em 7em;
+}
 .partition-bar {
     height: 5px;
     background: rgb(114, 14, 14);
@@ -293,3 +326,21 @@ p{
     }
 }
 
+#map {
+    height: 30em;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+.fa{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    width: 2.3em;
+    height: 2.3em;
+    text-align: center;
+    margin-top: 1em;
+    transition: 0.3s;
+}
+.fa:hover{
+    background-color: red;
+    transition: 0.3s;
+}

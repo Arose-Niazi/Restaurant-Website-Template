@@ -9,16 +9,16 @@
     <script src="JavaScript/jQ.js"></script>
     <script src="JavaScript/testing.js"></script>
     <link rel="stylesheet" href="CSS/navFooter.css">
-    <link rel="stylesheet" href="Awesome/css/all.css">
     <link rel="stylesheet" href="CSS/Theme.css">
-</head>
+    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
+  </head>
 
 <!--Body-->
 <nav>
   <div class="navbar" id="nav">
     <IMG class="Logo" src="Images/logo.png" width="120px" height="110px; margin-top: 0px; padding: 0px;" />
     <div class="reverse">
-      <a href="sponsors.php">Home</a>
+      <a class="active" href="sponsors.php">Home</a>
       <a href="faq.php">About Us</a>
       <a href="contact_us.php">Menu</a>
       <a href="events.php">Banquet Facility</a>
@@ -94,7 +94,7 @@
       <h3 class="heading white container">We Are Now Serving Authentic Indo-Chinese Food<input style="font-size: 0.7em;" type="button" class="margin-left allBtns backSkin black" value="Book A Table"></h3>
     </div>
     <!--==========================================================Sponcers===============================================================-->
-   
+    <div class="news partition-wooden">
     <div class="main-body container">
       <div class="row">
         <div class="col-md-6">
@@ -108,7 +108,7 @@
             reputation for impeccable service, elegant Asian-style décor, and exquisite Indian food. Dining at our restaurant is like 
             visiting India without leaving your hometown–an exciting blend of authentic Indian food, culture, and atmosphere awaits.
           </p>
-          <input class="allBtns backBlack" type="button" value="Know More About Us">
+          <input class="allBtns backBlack white" type="button" value="Know More About Us">
         </div>
       </div>
       <div class="row part">
@@ -118,6 +118,7 @@
         <div class="col-md-6">
           <img class="allImgs spon-cr spon-r" src="Images/halal.png">
         </div>
+    </div>
     </div>
     </div>
     <!--==========================================================Catering===============================================================-->
@@ -156,7 +157,7 @@
     </div>
 
     <!--==========================================================Events===============================================================-->
-    <div class="container margin-top" align="center">
+      <div class="container margin-top" align="center">
       <h4 class="heading maroon padding-top">OUR EVENTS</h4>
       <div class="partition-bar"></div>
       <div class="row">
@@ -196,10 +197,80 @@
         </div>
       </div>
     </div>
-    <!--==========================================================News===============================================================-->
-    <div class="news text-center">
+    <!--==========================================================Contact===============================================================-->
+    <div class="news text-center margin-top">
       <div style="margin-top: 4%;" align="center"><h3 class="heading white container">FIND US ON MAP</h3><br></div>
       <div align="center"><span>2215 US Highway 1 South, North Brunswick, NJ 08902</span></div>
     </div>
-    
-    </body>
+
+    <!--==========================================================Map===============================================================-->
+   
+    <div id="map"></div>
+    <script>
+        function initMap() {
+        var loc = {lat: 32.338462, lng: 71.530670};
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: loc});
+        var marker = new google.maps.Marker({position: loc, map: map});
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA8_OwtySc2M_GEw4_ADwMp1vZd6uH6zA&callback=initMap"></script>
+
+    <!--==========================================================partition contact===============================================================-->
+    <div class="partition-plain">
+      <div class="container-self">
+        <div class="row">
+          <div class="col-md-3">
+            <form class="form-main">
+              <h4  style="font-size: 24px;" class="heading margin-top">Have a message?</h4><br>
+              <input type="text" placeholder="Name*">
+              <input type="text" placeholder="Email*">
+              <input type="text" placeholder="Number*">
+              <textarea rows="4" type="text" placeholder="Message*"></textarea>
+              <input style="margin-top: 1em;" type="button" class="allBtns backBlack white" value="Send Inquiry">
+            </form>
+          </div>
+          <div class="col-md-3">
+            <h4  style="font-size: 24px;" class="heading margin-top">Contact Us</h4><br>
+            <div style="font-size: 18px">2215 US Highway 1 South, North Brunswick, NJ 08902<br>
+            Call Us At<br>
+            P : 732.398.9022<br>
+            M: 917.518.4331<br>
+            M: 347.784.9269<br>
+            Fax: 732.658 3700<br>
+            Email: gurupalace@hotmail.com<br></div>
+            <div>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4  style="font-size: 24px;" class="heading margin-top">Quick Links</h4><br>
+            <div style="font-size: 18px">
+              Home<br>
+              About Us<br>
+              Menu<br>
+              Banquet Facility<br>
+              Gallery<br>
+              Catering<br>
+              Events<br>
+              Contact Us</div>
+          </div>
+          <div class="col-md-4">
+            <h4  style="font-size: 24px;" class="heading margin-top">Hours of Operation</h4><br>
+            <div style="font-size: 18px">
+              <span class="red">7 DAYS OPEN</span><br>
+              Monday, Tuesday, Wednesday, Thursday and Sunday<br>
+              Lunch 11:30am – 3pm<br>
+              Dinner 5pm-10pm<br><br>
+              <span class="red"><b>Friday & Saturday</b></span><br>
+              Lunch 11:30am – 3 PM<br>
+              Dinner 5pm – 11pm<br>
+              DAILY LUNCH BUFFET<br>
+              Monday to Friday<br>
+              Saturday Ala Carte only
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+   </body>
