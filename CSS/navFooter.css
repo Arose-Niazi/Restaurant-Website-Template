@@ -184,3 +184,16 @@ a.icon {
   color: black;
   border-bottom: transparent!important;
 }
+
+footer{
+  height: 34em;
+  background-color: #0c0c0c;
+  text-align: center;
+}
+.footerLogo{
+  width: 20em;
+  height: 27em;
+  align-content: center;
+  margin-top: -9em;
+}
+
