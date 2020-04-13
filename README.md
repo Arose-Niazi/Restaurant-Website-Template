@@ -1,2 +1,2 @@
-# Restruent Website Khalen
- A repo for the resturent's website
+# Restaurant Website Khalen
+ A repo for the restaurant's website
