@@ -12,11 +12,11 @@
   left: 0;
   color: White;
   font-size: 0.9em;
-  line-height: 1em;
+  line-height: 2em;
   padding: 0px 2em;
   letter-spacing: 2.5px;
   transition: .2s ease-in-out 0s;
-  height: 7em;
+  height: 8.1em;
   text-align: right;
 }
 .active{
@@ -187,7 +187,7 @@ a.icon {
 
 footer{
   height: 34em;
-  background-color: #0c0c0c;
+  background-color: #151515;
   text-align: center;
 }
 .footerLogo{
@@ -197,3 +197,29 @@ footer{
   margin-top: -9em;
 }
 
+.container-self{
+  padding: 0em 7em;
+}
+.fa{
+  background-color: #151515;
+  color: white;
+  padding: 0.5em;
+  width: 2.3em;
+  height: 2.3em;
+  text-align: center;
+  margin-top: 1em;
+  transition: 0.3s;
+}
+.fa:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+.backGrey{
+  background-color: #151515;
+}
+.partition-plain{
+  height: 36em;
+  background-color: rgb(255, 253, 243);
+  background-image: none;
+  background-size: cover;
+}

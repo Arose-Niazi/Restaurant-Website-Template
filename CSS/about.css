@@ -1,0 +1,20 @@
+.about{
+    padding: 1.7em;
+    padding-top: 5em;
+    height: 90%;
+}
+.partition-plain{
+    height: 16em;
+    background-color: #e4d9ad;
+    background-image: none;
+    background-size: cover;
+  }
+  .about2{
+    padding-top: 3em;
+  }
+  .proj-img img {
+    width: 50%;
+    height: 420px;
+    float: right;
+    margin: 0px 0px 15px 30px;
+}

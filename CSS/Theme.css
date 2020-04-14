@@ -1,6 +1,6 @@
 html, body {
     scroll-behavior: smooth;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Work Sans", sans-serif;
     background-color: #F4F4F4;
     height: 100%;
     color: rgb(6, 11, 20);
@@ -20,6 +20,37 @@ html, body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.partition-bar {
+    height: 5px;
+    background: rgb(114, 14, 14);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    border-radius: 10%;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {
+        width: 10px
+    }
+    to {
+        width: 6.3em;
+    }
+}
+@media(max-width: 480px){
+    @keyframes example {
+        from {
+            width: 10px
+        }
+        to {
+            width: 120px
+        }
+    }
 }
 .form-main input[type=text], textarea{
     background-color: white;
@@ -63,6 +94,7 @@ p{
 .red{
     color: red;
 }
+
 .news {
     background-image: linear-gradient( rgba(1, 0, 0, 0.829), rgba(2, 0, 12, 0.726)), url("../Images/news.jpg");
     margin-top: 0px; height: 200px;
@@ -90,14 +122,18 @@ p{
 .partition-writing{
     height: 38em;
     background-image: url("../Images/ourMenu.jpg");
+    background-attachment: scroll;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
 }
-.partition-plain{
-    height: 36em;
-    background-color: rgb(255, 253, 243);
-    background-image: none;
-    background-size: cover;
+.headings-partition{
+    height: 28.2em;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.829), rgba(0, 0, 12, 0.726)), url("../Images/02.jpg");
+}
+.headings-partition h3{
+    height: 100%;
+    top: 10%;
+    font-size: 50px;
 }
 
 .allBtns{
@@ -174,10 +210,13 @@ p{
     float: right;
 }
 .backSkin{
-    background-color:rgb(228, 217, 173) ;
+    background-color:rgb(228, 217, 173);
     background: rgb(228, 217, 173);
 }
-
+.backRed{
+    background-color: red;
+    background: red;
+}
 /*-----------------EVENTS------------------*/
 
 .proj img {
@@ -294,56 +333,8 @@ p{
         color: #96858F;
     }
 }
-.container-self{
-    padding: 0em 7em;
-}
-.partition-bar {
-    height: 5px;
-    background: rgb(114, 14, 14);
-    margin-top: 20px;
-    margin-bottom: 30px;
-    position: relative;
-    text-align: left;
-    border-radius: 10%;
-    animation-name: example;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes example {
-    from {
-        width: 10px
-    }
-    to {
-        width: 6.3em;
-    }
-}
-@media(max-width: 480px){
-    @keyframes example {
-        from {
-            width: 10px
-        }
-        to {
-            width: 120px
-        }
-    }
-}
 
 #map {
     height: 30em;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
-}
-.fa{
-    background-color: black;
-    color: white;
-    padding: 0.5em;
-    width: 2.3em;
-    height: 2.3em;
-    text-align: center;
-    margin-top: 1em;
-    transition: 0.3s;
-}
-.fa:hover{
-    background-color: red;
-    transition: 0.3s;
 }
