@@ -14,6 +14,13 @@ html, body {
         font-size: 0.9em;
     }
 }
+.body{
+    background-image:url("../Images/wooden.jpg");
+    background-color: #96858F;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .form-main input[type=text], textarea{
     background-color: white;
     color: #818181;
@@ -79,11 +86,7 @@ p{
     height: 38em;
     background-image: linear-gradient( rgba(1, 0, 0, 0.829), rgba(2, 0, 12, 0.726)), url("../Images/news.jpg");
 }
-.partition-wooden{
-    height: 38em;
-    background-image:url("../Images/wooden.jpg");
-    height: 100%;
-}
+
 .partition-writing{
     height: 38em;
     background-image: url("../Images/ourMenu.jpg");
