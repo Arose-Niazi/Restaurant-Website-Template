@@ -58,7 +58,7 @@
         </div>
     </div>
     <!--==========================================================About plain===============================================================-->
-    <div class="news partition-plain">
+    <div class="news partition-dark">
         <div class="container about2">
             <p>Where there is passion, there is success. And those with passion do not know another way to live. For chef Jasbir Singh, Indian 
             food is number one priority. He often says that if there is anything he could contribute to this big mad world, then let it be 
@@ -98,4 +98,188 @@
             leads a team of people who implement his creative ideas to better serve a growing group of loyal patrons in New York and New Jersey.
         </div>
     </div>
+    <!--==========================================================All Comments===============================================================-->
+
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+            background-image: url('Images/wooden.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 4em;
+            text-align: center;
+        }     
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 1.3em;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .act, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {font-style: italic;}
+
+        /* Add a blue color to the author */
+        .author {color: cornflowerblue;}
+        .fa-qt{
+            padding-top: 2.6em;
+            font-size: 2.7em;
+        }
+</style>
+    <div>
+        <div class="slideshow-container">
+            <div align="center">
+                <i class="fa fa-quote-right fa-qt"></i>
+            </div>
+            <div class="mySlides">
+              <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+              <p class="author">- John Keats</p>
+            </div>
+            
+            <div class="mySlides">
+              <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+              <p class="author">- Ernest Hemingway</p>
+            </div>
+            
+            <div class="mySlides">
+              <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="author">- Thomas A. Edison</p>
+            </div>
+            
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" act", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " act";
+                }
+            </script>            
+    </div>
+
+    <!--==========================================================partition contact===============================================================-->
+    <div class="partition-plain">
+        <div class="container-self">
+          <div class="row">
+            <div class="col-md-3">
+              <form class="form-main">
+                <h4  style="font-size: 24px;" class="heading margin-top">Have a message?</h4><br>
+                <input type="text" placeholder="Name*">
+                <input type="text" placeholder="Email*">
+                <input type="text" placeholder="Number*">
+                <textarea rows="4" type="text" placeholder="Message*"></textarea>
+                <input style="margin-top: 1em;" type="button" class="allBtns backGrey white" value="Send Inquiry">
+              </form>
+            </div>
+            <div class="col-md-3">
+              <h4  style="font-size: 24px;" class="heading margin-top">Contact Us</h4><br>
+              <div style="font-size: 18px">2215 US Highway 1 South, North Brunswick, NJ 08902<br>
+              Call Us At<br>
+              P : 732.398.9022<br>
+              M: 917.518.4331<br>
+              M: 347.784.9269<br>
+              Fax: 732.658 3700<br>
+              Email: gurupalace@hotmail.com<br></div>
+              <div>
+                <i class="fa fa-facebook fa-footer"></i>
+                <i class="fa fa-twitter fa-footer"></i>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h4  style="font-size: 24px;" class="heading margin-top">Quick Links</h4><br>
+              <div style="font-size: 18px">
+                Home<br>
+                About Us<br>
+                Menu<br>
+                Banquet Facility<br>
+                Gallery<br>
+                Catering<br>
+                Events<br>
+                Contact Us</div>
+            </div>
+            <div class="col-md-4">
+              <h4  style="font-size: 24px;" class="heading margin-top">Hours of Operation</h4><br>
+              <div style="font-size: 18px">
+                <span class="red">7 DAYS OPEN</span><br>
+                Monday, Tuesday, Wednesday, Thursday and Sunday<br>
+                Lunch 11:30am – 3pm<br>
+                Dinner 5pm-10pm<br><br>
+                <span class="red"><b>Friday & Saturday</b></span><br>
+                Lunch 11:30am – 3 PM<br>
+                Dinner 5pm – 11pm<br>
+                DAILY LUNCH BUFFET<br>
+                Monday to Friday<br>
+                Saturday Ala Carte only
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
 </body>
+
+  <!--=============================================================Footer==================================================================-->
+      <footer>
+        <div align="center" class="footerLogoDiv">
+        <img class="footerLogo" src="Images/logo.png" width="120px" height="110px; margin-top: 0px; padding: 0px;" />
+      </div>      
+      <span class="white">Copyright © 2007-2019 Guru Palace Restaurants. All Rights Reserved.<br>
+          Website designed by <span class="red">INDEMAND SOFTECH SOLUTIONS</span></span><br>
+          <a class="footerBtn" href="https://www.doordash.com/business/129527/?utm_source=partner-link&utm_medium=website&utm_campaign=129527&utm_content=red-xl" 
+          target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style="text-decoration: none">
+          <div style="position: relative; width:268px; height:118px; margin: 2em auto; 
+          background-image: url(https://cdn.doordash.com/media/button/button_red_xl.svg); color:transparent">
+          Order Food Delivery with DoorDash</div></a>   
+      </footer>

@@ -200,7 +200,7 @@ footer{
 .container-self{
   padding: 0em 7em;
 }
-.fa{
+.fa-footer{
   background-color: #151515;
   color: white;
   padding: 0.5em;
@@ -210,7 +210,7 @@ footer{
   margin-top: 1em;
   transition: 0.3s;
 }
-.fa:hover{
+.fa-footer:hover{
   background-color: red;
   transition: 0.3s;
 }
